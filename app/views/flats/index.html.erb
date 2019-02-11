@@ -1,0 +1,4 @@
+<h1>Flats#index</h1>
+<% @flats.each_with_index do |flat, index| %>
+  <p><%= link_to flat["name"], show_path(flat["id"]) %></p>
+<% end %>
